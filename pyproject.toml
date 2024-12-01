@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "aoc2024"
+version = "0.1.0"
+description = "Advent of Code 2024"
+authors = ["dante9281"]
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.12"
+advent-of-code-data = "2.0.4"
+pytest = "8.3.3"
+flake8 = "7.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

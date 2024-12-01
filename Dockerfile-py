@@ -1,0 +1,9 @@
+FROM python:3
+
+# ARG POETRY_VERSION=1.2.2
+RUN python -m pip install poetry
+
+COPY pyproject.toml .
+RUN poetry config virtualenvs.create false \
+  && poetry install
+  
